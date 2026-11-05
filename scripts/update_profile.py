@@ -56,8 +56,6 @@ def streaks(days):
     return current,best
 
 def render(data=None):
-    # Keep the owner's explicit lifetime total separate from the public API.
-    snapshot=json.loads((ROOT/'profile-config.json').read_text())['commit_snapshot']
     current=longest=contributions=None
     if data:
         days=[d for w in data['calendar']['weeks'] for d in w['contributionDays']]
@@ -65,18 +63,13 @@ def render(data=None):
         contributions=data['calendar']['totalContributions']
     body=txt(28,29,'GITHUB / AT A GLANCE',11,'muted')
     body+='<circle cx="818" cy="25" r="4" fill="#7ee787" class="pulse"/>'
-    metrics=[(28,snapshot['count'],'total commits*',f"since {snapshot['since_year']}"),
-             (260,contributions,'contributions','last 12 months · public'),
-             (482,current,'current streak','days · UTC'),
-             (674,longest,'longest streak','days · last 12 months')]
+    metrics=[(28,contributions,'contributions','last 12 months · public'),
+             (328,current,'current streak','days · UTC'),
+             (616,longest,'longest streak','days · last 12 months')]
     for x,value,label,detail in metrics:
         number=f'{value:,}' if value is not None else '—'
         body+=txt(x,77,number,34,'accent' if x==28 else '')+txt(x,101,label,12)+txt(x,120,detail,10,'muted')
-    body+='<path d="M28 136H832" stroke="#212b36"/>'
-    body+=txt(28,155,f"*Owner-confirmed snapshot · {snapshot['as_of']}",9,'muted')
-    status=data['updated'] if data else 'Public stats awaiting first refresh'
-    body+=txt(832,155,status,9,'muted','text-anchor="end"')
-    (ROOT/'assets/stats.svg').write_text(svg('Lokith007 compact GitHub statistics',body,170))
+    (ROOT/'assets/stats.svg').write_text(svg('Lokith007 public contributions and streaks',body,142))
 
 if __name__=='__main__':
     data=collect()

@@ -4,7 +4,7 @@
 
 The rounded icon tiles in `toolbox.svg` use [Skill Icons](https://github.com/tandpfun/skill-icons) (MIT, license below). Additional technology symbols come from [Simple Icons](https://github.com/simple-icons/simple-icons) (CC0): Expo and Jetpack Compose.
 
-ChromaDB uses [Chroma's official wordmark](https://github.com/chroma-core/chroma/blob/main/docs/assets/chroma-wordmark-color.png), with its symbol displayed inside a clipped viewport. Computer Vision uses an original concept symbol.
+ChromaDB uses [Chroma's official wordmark](https://github.com/chroma-core/chroma/blob/main/docs/assets/chroma-wordmark-color.png), with its symbol displayed inside a clipped viewport. 
 
 The parrot-style LangChain and LangGraph marks come from [Lobe Icons](https://github.com/lobehub/lobe-icons), MIT licensed. [LangChain source](https://github.com/lobehub/lobe-icons/blob/298dcb34e1109e97a1713fc2b9f3a7aebea8d483/packages/static-svg/icons/langchain.svg); [LangGraph source](https://github.com/lobehub/lobe-icons/blob/master/packages/static-svg/icons/langgraph.svg). Their monochrome marks use mint on dark green for contrast.
 
@@ -19,11 +19,11 @@ Photos are from [Unsplash](https://unsplash.com/license), downloaded with server
 
 ## Quote references
 
-The looping GIF displays each quote for 5.5 seconds, one at a time.
+Each quote appears alone for 5.5 seconds in the looping GIF.
 
-- Linus Torvalds, “Talk is cheap, show me the code.” [Interview with iTWire](https://itwire.com/business-it-news/open-source/no-highs%2C-no-lows-linus-torvalds-on-25-years-of-linux).
-- Steve Jobs, “Stay hungry. Stay foolish.” [Stanford commencement address, 2005](https://news.stanford.edu/stories/2005/06/youve-got-find-love-jobs-says). Jobs was quoting the farewell message of the Whole Earth Catalog.
-- Tim Berners-Lee, “This is for everyone.” [W3C, 2012](https://www.w3.org/news/2012/this-is-for-everyone-the-tweet-heard-around-the-world/).
+- Alan Kay, “The best way to predict the future is to invent it.” [Computer History Museum](https://computerhistory.org/blog/yesterdays-tomorrows-the-origins-of-the-tablet/).
+- Edsger W. Dijkstra, “Simplicity is prerequisite for reliability.” [How do we tell truths that might hurt?, EWD498 (1975)](https://www.cs.virginia.edu/~evans/cs655-S00/readings/ewd498.html).
+- Richard Feynman, “What I cannot create, I do not understand.” [Caltech Magazine](https://magazine.caltech.edu/post/biology-through-the-eyes-of-a-physicist).
 
 ## Skill Icons and Lobe Icons license
 
