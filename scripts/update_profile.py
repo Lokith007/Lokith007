@@ -8,9 +8,9 @@ import urllib.request
 
 ROOT = Path(__file__).resolve().parents[1]
 USER = 'Lokith007'
-GREEN = '#7ee787'
+VIOLET = '#b69cff'
 MUTED = '#8b9aae'
-CSS = 'text{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;fill:#e6edf3}\n.muted{fill:#8b9aae}.accent{fill:#7ee787}\n@keyframes pulse{0%,100%{opacity:.4}50%{opacity:1}}\n.pulse{animation:pulse 3s ease-in-out infinite}\n@media(prefers-reduced-motion:reduce){*{animation:none!important}}\n'
+CSS = 'text{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;fill:#e6edf3}\n.muted{fill:#8b9aae}.accent{fill:#b69cff}\n@keyframes pulse{0%,100%{opacity:.4}50%{opacity:1}}\n.pulse{animation:pulse 3s ease-in-out infinite}\n@media(prefers-reduced-motion:reduce){*{animation:none!important}}\n'
 
 def svg(title, body, height):
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="860" height="{height}" viewBox="0 0 860 {height}" role="img" aria-labelledby="title"><title id="title">{html.escape(title)}</title><style>{CSS}</style><rect width="860" height="{height}" rx="14" fill="#0d1117"/>{body}</svg>'''
@@ -61,15 +61,21 @@ def render(data=None):
         days=[d for w in data['calendar']['weeks'] for d in w['contributionDays']]
         current,longest=streaks(days)
         contributions=data['calendar']['totalContributions']
-    body=txt(28,29,'GITHUB / AT A GLANCE',11,'muted')
-    body+='<circle cx="818" cy="25" r="4" fill="#7ee787" class="pulse"/>'
-    metrics=[(28,contributions,'contributions','last 12 months · public'),
-             (328,current,'current streak','days · UTC'),
-             (616,longest,'longest streak','days · last 12 months')]
-    for x,value,label,detail in metrics:
+    body='<rect x="1" y="1" width="858" height="200" rx="16" fill="none" stroke="#35415d" stroke-width="2"/>'
+    body+=txt(24,29,'GITHUB / ACTIVITY',11,'muted')
+    body+=txt(836,29,'BUILDING, ONE DAY AT A TIME',9,'muted','text-anchor="end"')
+    metrics=[(18,contributions,'contributions','last 12 months · public','#b69cff','12M'),
+             (298,current,'current streak','days · UTC','#66dbf5','NOW'),
+             (578,longest,'longest streak','days · last 12 months','#ffc07c','BEST')]
+    for x,value,label,detail,color,tag in metrics:
         number=f'{value:,}' if value is not None else '—'
-        body+=txt(x,77,number,34,'accent' if x==28 else '')+txt(x,101,label,12)+txt(x,120,detail,10,'muted')
-    (ROOT/'assets/stats.svg').write_text(svg('Lokith007 public contributions and streaks',body,142))
+        body+=f'<rect x="{x}" y="48" width="264" height="136" rx="12" fill="#131a29" stroke="#39435e" stroke-width="1.5"/>'
+        body+=f'<path d="M{x+15} 49H{x+82}" stroke="{color}" stroke-width="3" stroke-linecap="round"/>'
+        body+=txt(x+244,72,tag,9,'muted','text-anchor="end"')
+        body+=txt(x+20,111,number,34,'',f'style="fill:{color}"')
+        body+=txt(x+20,139,label,12)
+        body+=txt(x+20,163,detail,10,'muted')
+    (ROOT/'assets/stats.svg').write_text(svg('Lokith007 public contributions and streaks',body,202))
 
 if __name__=='__main__':
     data=collect()

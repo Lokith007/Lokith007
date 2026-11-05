@@ -3,14 +3,14 @@
 </p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/lokith-s-a02869319/"><img src="./assets/social-linkedin.svg" height="28" alt="Connect with Lokith on LinkedIn" /></a>
-  <a href="mailto:lokithk93@gmail.com"><img src="./assets/social-email.svg" height="28" alt="Email lokithk93@gmail.com" /></a>
-  <a href="https://x.com/crisnoxx_loki"><img src="./assets/social-x.svg" height="28" alt="Follow @crisnoxx_loki on X" /></a>
-  <img src="https://komarev.com/ghpvc/?username=Lokith007" height="28" alt="Profile views" />
+  <a href="https://www.linkedin.com/in/lokith-s-a02869319/"><img src="./assets/social-linkedin.svg" height="32" alt="LinkedIn" /></a>
+  <a href="https://x.com/crisnoxx_loki"><img src="./assets/social-x.svg" height="32" alt="Twitter / X — @crisnoxx_loki" /></a>
+  <a href="mailto:lokithk93@gmail.com"><img src="./assets/social-email.svg" height="32" alt="Email lokithk93@gmail.com" /></a>
+  <img src="https://komarev.com/ghpvc/?username=Lokith007&amp;style=for-the-badge&amp;color=00dce6&amp;label=PROFILE+VIEWS" height="32" alt="Profile views" />
 </p>
 
 <p align="center">
-  <img src="./assets/about.svg" width="860" alt="role: Full Stack Developer; focus: Scalable web apps · AI-powered experiences; learning: System Design · Cloud &amp; DevOps · Agentic AI; experience: Shipping products from idea to production; connecting thoughtful interfaces, APIs and data.; mission: Turn everyday friction into useful, dependable software.; fun_fact: My “one small fix” usually comes with three new features." />
+  <img src="./assets/about.svg" width="860" alt="role: Full Stack Developer; focus: Scalable web apps · AI-powered experiences; learning: System Design · Cloud &amp; DevOps · Agentic AI; experience: Building across the stack: thoughtful interfaces, reliable APIs and production-ready integrations.; mission: Make complex workflows feel effortless.; fun_fact: I call it a quick fix. My git history disagrees." />
 </p>
 
 <p align="center">
@@ -24,7 +24,7 @@
 </p>
 
 <p align="center">
-  <img src="./assets/quotes.gif" width="760" alt="Three rotating quotes by Alan Kay, Edsger W. Dijkstra and Richard Feynman about invention, simplicity and learning by building" />
+  <img src="./assets/quotes.gif" width="760" alt="Three new rotating quotes from Rob Pike, Margaret Hamilton and Donald Knuth" />
 </p>
 
 <p align="center"><strong>curiosity on. build mode on.</strong></p>

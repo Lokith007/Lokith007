@@ -19,11 +19,11 @@ Photos are from [Unsplash](https://unsplash.com/license), downloaded with server
 
 ## Quote references
 
-Each quote appears alone for 5.5 seconds in the looping GIF.
+Each quote appears alone for 6.5 seconds in the looping GIF.
 
-- Alan Kay, “The best way to predict the future is to invent it.” [Computer History Museum](https://computerhistory.org/blog/yesterdays-tomorrows-the-origins-of-the-tablet/).
-- Edsger W. Dijkstra, “Simplicity is prerequisite for reliability.” [How do we tell truths that might hurt?, EWD498 (1975)](https://www.cs.virginia.edu/~evans/cs655-S00/readings/ewd498.html).
-- Richard Feynman, “What I cannot create, I do not understand.” [Caltech Magazine](https://magazine.caltech.edu/post/biology-through-the-eyes-of-a-physicist).
+- Rob Pike, “Clear is better than clever.” [Go Proverbs](https://go-proverbs.github.io/).
+- Margaret Hamilton, “There was no choice but to be pioneers.” [NASA](https://science.nasa.gov/people/margaret-hamilton/), excerpt from her retrospective about the Apollo software team.
+- Donald Knuth, “Science is what we understand well enough to explain to a computer. Art is everything else we do.” [Foreword to A=B, 1995](https://sites.math.rutgers.edu/~zeilberg/DEK.html).
 
 ## Skill Icons and Lobe Icons license
 
