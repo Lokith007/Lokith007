@@ -13,7 +13,7 @@ MUTED = '#8b9aae'
 CSS = 'text{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;fill:#e6edf3}\n.muted{fill:#8b9aae}\n@keyframes flow{to{stroke-dashoffset:-280}}\n@keyframes reveal{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}\n@keyframes breathe{0%,100%{opacity:.35}50%{opacity:1}}\n.flow{stroke-dasharray:24 256;animation:flow 6s linear infinite}.metric{animation:reveal .9s ease-out both}.pulse{animation:breathe 3s ease-in-out infinite}\n@media(prefers-reduced-motion:reduce){*{animation:none!important}}\n'
 
 def svg(title, body, height):
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="860" height="{height}" viewBox="0 0 860 {height}" role="img" aria-labelledby="title"><title id="title">{html.escape(title)}</title><style>{CSS}</style><defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#101b22"/><stop offset="1" stop-color="#0d1117"/></linearGradient></defs><rect width="860" height="{height}" rx="16" fill="url(#bg)"/>{body}</svg>'''
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="860" height="{height}" viewBox="0 0 860 {height}" role="img" aria-labelledby="title"><title id="title">{html.escape(title)}</title><style>{CSS}</style><defs></defs><rect width="860" height="{height}" rx="16" fill="#0b0f14"/>{body}</svg>'''
 
 def txt(x, y, value, size=12, cls='', extra=''):
     return f'<text x="{x}" y="{y}" font-size="{size}" class="{cls}" {extra}>{html.escape(str(value))}</text>'

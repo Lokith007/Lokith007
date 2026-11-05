@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="860" height="230" viewBox="0 0 860 230" fill="#e6edf3" role="img" aria-labelledby="title desc">
 <title id="title">Lokith — build, learn, repeat</title><desc id="desc">Animated terminal, orbiting commit signals, and a dimensional developer workspace.</desc>
-<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#101b22"/><stop offset="1" stop-color="#0d1117"/></linearGradient><radialGradient id="glow"><stop stop-color="#3fb950" stop-opacity=".14"/><stop offset="1" stop-color="#3fb950" stop-opacity="0"/></radialGradient><clipPath id="typing"><rect x="566" y="94" width="166" height="19" class="type"/></clipPath></defs>
+<defs><clipPath id="typing"><rect x="566" y="94" width="166" height="19" class="type"/></clipPath></defs>
 <style>
 text{font-family:ui-monospace,SFMono-Regular,Consolas,monospace}
 @keyframes type{0%,10%{width:0}45%,90%{width:166px}100%{width:0}}
@@ -12,8 +12,8 @@ text{font-family:ui-monospace,SFMono-Regular,Consolas,monospace}
 .float{animation:float 5s ease-in-out infinite}.signal{stroke-dasharray:5 155;animation:packet 5s linear infinite}.light{animation:breathe 3s ease-in-out infinite}
 @media(prefers-reduced-motion:reduce){*{animation:none!important}}
 </style>
-<rect width="860" height="230" rx="16" fill="url(#bg)"/>
-<ellipse cx="650" cy="125" rx="230" ry="150" fill="url(#glow)"/>
+<rect width="860" height="230" rx="16" fill="#0b0f14"/>
+
 <path d="M0 207H860M457 0V230" stroke="#25343b" opacity=".35"/>
 <circle cx="34" cy="34" r="4" fill="#7ee787" class="light"/><text x="49" y="38" font-size="11" fill="#8b9aae">LOKITH007 / PERSONAL WORKSPACE</text>
 <text x="32" y="110" font-size="46" font-weight="700" letter-spacing="-3">Hi, I'm Lokith<tspan fill="#7ee787">.</tspan></text>
