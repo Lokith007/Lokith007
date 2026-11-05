@@ -17,13 +17,13 @@ Photos are from [Unsplash](https://unsplash.com/license), downloaded with server
 - `hardware.jpg`: [Jakub Pabis — computer motherboard](https://unsplash.com/photos/close-up-of-a-computer-motherboard-with-many-components-i5Ugf0xc22Q).
 - `workspace.jpg`: [Unsplash coding workspace photo](https://images.unsplash.com/photo-1617042375876-a13e36732a04).
 
-## Quote references
+## Quotes
 
-Each quote appears alone for 6.5 seconds in the looping GIF.
+These quotes and attributions were supplied by Lokith for the profile. They appear one at a time with a typing entrance, a reading pause, and a fade transition.
 
-- Rob Pike, “Clear is better than clever.” [Go Proverbs](https://go-proverbs.github.io/).
-- Margaret Hamilton, “There was no choice but to be pioneers.” [NASA](https://science.nasa.gov/people/margaret-hamilton/), excerpt from her retrospective about the Apollo software team.
-- Donald Knuth, “Science is what we understand well enough to explain to a computer. Art is everything else we do.” [Foreword to A=B, 1995](https://sites.math.rutgers.edu/~zeilberg/DEK.html).
+- “The best way to predict the future is to invent it.” — Alan Kay
+- “First, solve the problem. Then, write the code.” — John Johnson
+- “Software is eating the world.” — Marc Andreessen
 
 ## Skill Icons and Lobe Icons license
 

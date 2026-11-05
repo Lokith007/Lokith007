@@ -10,10 +10,10 @@ ROOT = Path(__file__).resolve().parents[1]
 USER = 'Lokith007'
 VIOLET = '#b69cff'
 MUTED = '#8b9aae'
-CSS = 'text{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;fill:#e6edf3}\n.muted{fill:#8b9aae}.accent{fill:#b69cff}\n@keyframes pulse{0%,100%{opacity:.4}50%{opacity:1}}\n.pulse{animation:pulse 3s ease-in-out infinite}\n@media(prefers-reduced-motion:reduce){*{animation:none!important}}\n'
+CSS = 'text{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;fill:#e6edf3}\n.muted{fill:#8b9aae}\n@keyframes flow{to{stroke-dashoffset:-280}}\n@keyframes reveal{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}\n@keyframes breathe{0%,100%{opacity:.35}50%{opacity:1}}\n.flow{stroke-dasharray:24 256;animation:flow 6s linear infinite}.metric{animation:reveal .9s ease-out both}.pulse{animation:breathe 3s ease-in-out infinite}\n@media(prefers-reduced-motion:reduce){*{animation:none!important}}\n'
 
 def svg(title, body, height):
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="860" height="{height}" viewBox="0 0 860 {height}" role="img" aria-labelledby="title"><title id="title">{html.escape(title)}</title><style>{CSS}</style><rect width="860" height="{height}" rx="14" fill="#0d1117"/>{body}</svg>'''
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="860" height="{height}" viewBox="0 0 860 {height}" role="img" aria-labelledby="title"><title id="title">{html.escape(title)}</title><style>{CSS}</style><defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#101b22"/><stop offset="1" stop-color="#0d1117"/></linearGradient></defs><rect width="860" height="{height}" rx="16" fill="url(#bg)"/>{body}</svg>'''
 
 def txt(x, y, value, size=12, cls='', extra=''):
     return f'<text x="{x}" y="{y}" font-size="{size}" class="{cls}" {extra}>{html.escape(str(value))}</text>'
@@ -61,21 +61,19 @@ def render(data=None):
         days=[d for w in data['calendar']['weeks'] for d in w['contributionDays']]
         current,longest=streaks(days)
         contributions=data['calendar']['totalContributions']
-    body='<rect x="1" y="1" width="858" height="200" rx="16" fill="none" stroke="#35415d" stroke-width="2"/>'
-    body+=txt(24,29,'GITHUB / ACTIVITY',11,'muted')
-    body+=txt(836,29,'BUILDING, ONE DAY AT A TIME',9,'muted','text-anchor="end"')
-    metrics=[(18,contributions,'contributions','last 12 months · public','#b69cff','12M'),
-             (298,current,'current streak','days · UTC','#66dbf5','NOW'),
-             (578,longest,'longest streak','days · last 12 months','#ffc07c','BEST')]
-    for x,value,label,detail,color,tag in metrics:
+    body=txt(28,30,'GITHUB / ACTIVITY',11,'muted')
+    body+='<path d="M192 26H797" stroke="#26373f"/><circle cx="820" cy="26" r="4" fill="#7ee787" class="pulse"/>'
+    metrics=[(28,contributions,'contributions','last 12 months · public','#7ee787'),
+             (328,current,'current streak','days · UTC','#9dd9e8'),
+             (616,longest,'longest streak','days · last 12 months','#d8bd91')]
+    body+='<path d="M296 62V145M584 62V145" stroke="#293840"/>'
+    for i,(x,value,label,detail,color) in enumerate(metrics):
         number=f'{value:,}' if value is not None else '—'
-        body+=f'<rect x="{x}" y="48" width="264" height="136" rx="12" fill="#131a29" stroke="#39435e" stroke-width="1.5"/>'
-        body+=f'<path d="M{x+15} 49H{x+82}" stroke="{color}" stroke-width="3" stroke-linecap="round"/>'
-        body+=txt(x+244,72,tag,9,'muted','text-anchor="end"')
-        body+=txt(x+20,111,number,34,'',f'style="fill:{color}"')
-        body+=txt(x+20,139,label,12)
-        body+=txt(x+20,163,detail,10,'muted')
-    (ROOT/'assets/stats.svg').write_text(svg('Lokith007 public contributions and streaks',body,202))
+        body+=f'<g class="metric" style="animation-delay:{i*.18}s">'
+        body+=txt(x,103,number,38,'',f'style="fill:{color}"')
+        body+=txt(x,128,label,12)+txt(x,148,detail,10,'muted')+'</g>'
+        body+=f'<path d="M{x} 164h216" stroke="#24333b"/><path d="M{x} 164h216" stroke="{color}" stroke-width="1.5" class="flow" style="animation-delay:{-i*2}s"/>'
+    (ROOT/'assets/stats.svg').write_text(svg('Lokith007 public contributions and streaks',body,184))
 
 if __name__=='__main__':
     data=collect()
