@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <img src="./assets/toolbox.svg" width="860" alt="My tech stack: Python, C, C++, Kotlin, JavaScript, TypeScript; React.js, Next.js, React Native, Expo, HTML, CSS, Tailwind CSS, GSAP, Three.js, Jetpack Compose; Node.js, Express.js, FastAPI, Flask; MongoDB, MySQL, PostgreSQL, SQLite, Firebase, Prisma ORM, ChromaDB; AWS, Docker, Kubernetes, GitHub Actions, CI/CD; RAG, LangChain, LangGraph, Computer Vision, Edge AI, TensorFlow, Scikit-learn, NumPy, Pandas; REST APIs, GraphQL, Postman" />
+  <img src="./assets/toolbox.svg" width="860" alt="My tech stack: React.js, Next.js, Node.js, TypeScript, JavaScript, Python, Docker, PostgreSQL, MongoDB, FastAPI, Kubernetes, AWS, Firebase, C, C++, Kotlin, Expo, HTML, CSS, Tailwind CSS, GSAP, Three.js, Jetpack Compose, Express.js, Flask, MySQL, SQLite, Prisma ORM, ChromaDB, RAG, LangChain, LangGraph, Computer Vision, TensorFlow, Scikit-learn, NumPy, Pandas, REST APIs, GraphQL, Postman" />
 </p>
 
 <p align="center">

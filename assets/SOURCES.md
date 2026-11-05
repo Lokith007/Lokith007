@@ -2,10 +2,9 @@
 
 ## Technology marks
 
-Most technology marks in `toolbox.svg` come from [Simple Icons](https://github.com/simple-icons/simple-icons), distributed under CC0. The panel uses a monochrome treatment. React Native uses the React mark. RAG, Computer Vision, Edge AI, CI/CD and REST APIs use original concept symbols rather than brand logos.
+The rounded icon tiles in `toolbox.svg` use [Skill Icons](https://github.com/tandpfun/skill-icons) (MIT, license below). Additional technology symbols come from [Simple Icons](https://github.com/simple-icons/simple-icons) (CC0): Expo, GSAP, Jetpack Compose, LangChain, LangGraph, NumPy and Pandas.
 
-- AWS: [Devicon](https://github.com/devicons/devicon/blob/master/icons/amazonwebservices/amazonwebservices-original.svg), MIT license below. The dark lettering is lightened for contrast.
-- ChromaDB: [Chroma's official wordmark](https://github.com/chroma-core/chroma/blob/main/docs/assets/chroma-wordmark-color.png); the SVG viewport displays its symbol.
+ChromaDB uses [Chroma's official wordmark](https://github.com/chroma-core/chroma/blob/main/docs/assets/chroma-wordmark-color.png), with its symbol displayed inside a clipped viewport. RAG, Computer Vision and REST APIs use original concept symbols.
 
 Brand names and marks belong to their respective owners and identify technologies used by Lokith.
 
@@ -24,25 +23,26 @@ The looping GIF displays each quote for 5.5 seconds, one at a time.
 - Steve Jobs, “Stay hungry. Stay foolish.” [Stanford commencement address, 2005](https://news.stanford.edu/stories/2005/06/youve-got-find-love-jobs-says). Jobs was quoting the farewell message of the Whole Earth Catalog.
 - Tim Berners-Lee, “This is for everyone.” [W3C, 2012](https://www.w3.org/news/2012/this-is-for-everyone-the-tweet-heard-around-the-world/).
 
-## Devicon license
+## Skill Icons license
 
-The MIT License (MIT)
+MIT License
 
-Copyright (c) 2015 konpa
+Copyright (c) 2022 tandpfun
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of
-this software and associated documentation files (the "Software"), to deal in
-the Software without restriction, including without limitation the rights to
-use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
-the Software, and to permit persons to whom the Software is furnished to do so,
-subject to the following conditions:
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
-FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
-COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
-IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
-CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
