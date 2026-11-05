@@ -1,0 +1,48 @@
+# Asset credits
+
+## Technology marks
+
+Most technology marks in `toolbox.svg` come from [Simple Icons](https://github.com/simple-icons/simple-icons), distributed under CC0. The panel uses a monochrome treatment. React Native uses the React mark. RAG, Computer Vision, Edge AI, CI/CD and REST APIs use original concept symbols rather than brand logos.
+
+- AWS: [Devicon](https://github.com/devicons/devicon/blob/master/icons/amazonwebservices/amazonwebservices-original.svg), MIT license below. The dark lettering is lightened for contrast.
+- ChromaDB: [Chroma's official wordmark](https://github.com/chroma-core/chroma/blob/main/docs/assets/chroma-wordmark-color.png); the SVG viewport displays its symbol.
+
+Brand names and marks belong to their respective owners and identify technologies used by Lokith.
+
+## Photography
+
+Photos are from [Unsplash](https://unsplash.com/license), downloaded with server-side cropping for these panels. They are illustrative photos, not claims about Lokith's own workspace or hardware.
+
+- `hardware.jpg`: [Jakub Pabis — computer motherboard](https://unsplash.com/photos/close-up-of-a-computer-motherboard-with-many-components-i5Ugf0xc22Q).
+- `workspace.jpg`: [Unsplash coding workspace photo](https://images.unsplash.com/photo-1617042375876-a13e36732a04).
+
+## Quote references
+
+The looping GIF displays each quote for 5.5 seconds, one at a time.
+
+- Linus Torvalds, “Talk is cheap, show me the code.” [Interview with iTWire](https://itwire.com/business-it-news/open-source/no-highs%2C-no-lows-linus-torvalds-on-25-years-of-linux).
+- Steve Jobs, “Stay hungry. Stay foolish.” [Stanford commencement address, 2005](https://news.stanford.edu/stories/2005/06/youve-got-find-love-jobs-says). Jobs was quoting the farewell message of the Whole Earth Catalog.
+- Tim Berners-Lee, “This is for everyone.” [W3C, 2012](https://www.w3.org/news/2012/this-is-for-everyone-the-tweet-heard-around-the-world/).
+
+## Devicon license
+
+The MIT License (MIT)
+
+Copyright (c) 2015 konpa
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
